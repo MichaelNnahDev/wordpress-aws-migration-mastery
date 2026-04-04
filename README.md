@@ -31,17 +31,26 @@ This repository contains the definitive, CLI-only workflow for migrating a produ
 
 ---
 
-## ⚡ Quick Start: Automation Scripts
-
+⚡ Quick Start: Automation Scripts
 To harden your server and automate the migration tasks, run these commands from your EC2 terminal:
 
-**1. Server Optimization (Stability)**
-Prevent **Out-of-Memory (OOM)** errors on small instances by adding a 1GB swap file. This ensures MySQL doesn't crash during heavy database tasks:
-```bash
+1. Server Optimization (Stability)
+Prevent Out-of-Memory (OOM) errors on small instances by adding a 1GB swap file:
+
 chmod +x scripts/setup-swap.sh
 sudo ./scripts/setup-swap.sh
 
----
+2. Database Migration with WP-CLI
+Install the gold-standard tool for search-and-replace (handles serialized data):
+
+chmod +x scripts/install-wp-cli.sh
+./scripts/install-wp-cli.sh
+
+3. Permission Standards
+Ensure your web server has the correct permissions to write files and perform updates:
+
+chmod +x scripts/fix-permissions.sh
+sudo ./scripts/fix-permissions.sh
 
 ## 💼 Hire Me for Your Migration
 **Are you looking to move your business to the Cloud?**
