@@ -52,6 +52,18 @@ Ensure your web server has the correct permissions to write files and perform up
 chmod +x scripts/fix-permissions.sh
 sudo ./scripts/fix-permissions.sh
 ```
+### 4. SSL & Auto-Renewal (Certbot)
+Secure your site with Let's Encrypt. Replace `michaelnnah.com` with your actual domain. Ensure your DNS A-Records are pointing to this EC2 IP first:
+
+**Installation & Activation:**
+```
+sudo apt install certbot python3-certbot-apache -y
+sudo certbot --apache -d michaelnnah.com -d [www.michaelnnah.com](https://www.michaelnnah.com)
+```
+**Perform a dry-run to test renewal logic**
+```
+sudo certbot renew --dry-run
+```
 ---
 
 ## 💼 Hire Me for Your Migration
