@@ -41,7 +41,7 @@ I specialize in migrating high-traffic WordPress and WooCommerce websites from s
 
 **Let's talk about your project:**
 - **Website:** [michaelnnah.com](https://michaelnnah.com)
-- [Hire Me for your Migration](mailto:nnahmichael@gmail.com?subject=Inquiry%20about%20AWS%20Migration)
+- **Email:** <contact@michaelnnah.com>
 
 ---
 
