@@ -40,14 +40,8 @@ Prevent Out-of-Memory (OOM) errors on small instances by adding a 1GB swap file:
 ```bash
 chmod +x scripts/setup-swap.sh
 sudo ./scripts/setup-swap.sh
-
-### 2. Database Migration with WP-CLI
-Install the gold-standard tool for search-and-replace (handles serialized data):
-
-```bash
-chmod +x scripts/install-wp-cli.sh
-./scripts/install-wp-cli.sh
 ---
+
 
 ## 💼 Hire Me for Your Migration
 **Are you looking to move your business to the Cloud?**
