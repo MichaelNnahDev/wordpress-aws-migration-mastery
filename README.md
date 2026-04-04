@@ -22,10 +22,31 @@ This repository contains the definitive, CLI-only workflow for migrating a produ
 
 ---
 
-## 📂 Repository Contents
-- `/configs/`: Production-ready Apache Virtual Host configuration files.
-- `/scripts/`: Automation scripts to fix Linux file permissions instantly.
+## 📂 Repository Contents & Automation
+- `/configs/`: Production-ready Apache Virtual Host configuration files with custom error logging.
+- `/scripts/`: 
+  - `fix-permissions.sh`: Instantly resets `www-data` ownership and sets 755/644 permissions.
+  - `setup-swap.sh`: Allocates 1GB of disk space as "Emergency RAM" to prevent MySQL crashes.
+  - `install-wp-cli.sh`: Automates the installation of WordPress CLI for safe database migrations.
 
+---
+
+## ⚡ Quick Start: Automation Scripts
+
+To harden your server and automate the migration tasks, run these commands from your EC2 terminal:
+
+### 1. Server Optimization (Stability)
+Prevent Out-of-Memory (OOM) errors on small instances by adding a 1GB swap file:
+```bash
+chmod +x scripts/setup-swap.sh
+sudo ./scripts/setup-swap.sh
+
+### 2. Database Migration with WP-CLI
+Install the gold-standard tool for search-and-replace (handles serialized data):
+
+```bash
+chmod +x scripts/install-wp-cli.sh
+./scripts/install-wp-cli.sh
 ---
 
 ## 💼 Hire Me for Your Migration
