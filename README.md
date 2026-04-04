@@ -31,18 +31,6 @@ This repository contains the definitive, CLI-only workflow for migrating a produ
 
 ---
 
-## ⚡ Quick Start: Automation Scripts
-
-To harden your server and automate the migration tasks, run these commands from your EC2 terminal:
-
-### 1. Server Optimization (Stability)
-Prevent Out-of-Memory (OOM) errors on small instances by adding a 1GB swap file:
-```bash
-chmod +x scripts/setup-swap.sh
-sudo ./scripts/setup-swap.sh
----
-
-
 ## 💼 Hire Me for Your Migration
 **Are you looking to move your business to the Cloud?**
 
