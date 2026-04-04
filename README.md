@@ -58,7 +58,7 @@ Secure your site with Let's Encrypt. Replace `michaelnnah.com` with your actual 
 **Installation & Activation:**
 ```
 sudo apt install certbot python3-certbot-apache -y
-sudo certbot --apache -d michaelnnah.com -d [www.michaelnnah.com](https://www.michaelnnah.com)
+sudo certbot --apache -d michaelnnah.com -d www.michaelnnah.com
 ```
 **Perform a dry-run to test renewal logic**
 ```
