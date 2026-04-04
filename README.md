@@ -41,7 +41,7 @@ I specialize in migrating high-traffic WordPress and WooCommerce websites from s
 
 **Let's talk about your project:**
 - **Website:** [michaelnnah.com](https://michaelnnah.com)
-- **Email:** [contact@michaelnnah.com]
+- **Email:** <contact@michaelnnah.com>
 
 ---
 
